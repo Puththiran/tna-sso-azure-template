@@ -1,3 +1,6 @@
+import '@babel/polyfill';
+import { fetch } from 'whatwg-fetch';
+
 export const jokes = {
     getJoke: () => {
         return new Promise((resolve, reject) => {

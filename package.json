@@ -4,8 +4,8 @@
   "description": "This is a node application to render HTML templates for Microsoft Azure ADB2C",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "dev": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --out-dir prod"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,12 @@
     "url": "https://github.com/nationalarchives/tna-sso-azure-template/issues"
   },
   "homepage": "https://github.com/nationalarchives/tna-sso-azure-template#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "parcel-bundler": "^1.10.1"
+  },
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "parcel-bundler": "^1.11.0"
+    "@babel/core": "^7.1.2",
+    "sass": "^1.14.1"
   }
 }
