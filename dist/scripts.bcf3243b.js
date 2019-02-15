@@ -198,15 +198,14 @@ require("../styles/index.scss");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 var firstName = (0, _utils.getFullName)('Hello World');
 console.log(firstName);
 
-var Name = function Name() {
-  _classCallCheck(this, Name);
+var Rectangle = function Rectangle(height, width) {
+  _classCallCheck(this, Rectangle);
 
-  _defineProperty(this, "name", 'Anonymous');
+  this.height = height;
+  this.width = width;
 };
 },{"./utils":"scripts/utils.js","../styles/index.scss":"styles/index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -235,7 +234,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58470" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61383" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

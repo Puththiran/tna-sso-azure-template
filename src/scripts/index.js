@@ -5,6 +5,9 @@ const firstName = getFullName('Hello World');
 
 console.log(firstName);
 
-class Name {
-    name = 'Anonymous'
+class Rectangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
 }
