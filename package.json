@@ -4,6 +4,7 @@
   "description": "This is a node application to render HTML templates for Microsoft Azure ADB2C",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "parcel src/index.html --open",
     "build": "parcel build src/index.html --out-dir prod",
     "lint": "./node_modules/.bin/eslint ./src/scripts --fix"
@@ -25,7 +26,9 @@
   },
   "homepage": "https://github.com/nationalarchives/tna-sso-azure-template#readme",
   "dependencies": {
-    "vue": "^2.6.6"
+    "vue": "^2.6.6",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -37,8 +40,6 @@
     "eslint-config-prettier": "4.0.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-vue": "^5.2.2",
-    "express": "^4.16.4",
-    "express-ejs-layouts": "^2.5.0",
     "parcel-bundler": "^1.11.0",
     "prettier": "1.16.4",
     "sass": "^1.14.1"
