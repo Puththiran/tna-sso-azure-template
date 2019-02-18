@@ -1,5 +1,9 @@
 @import "./sass/base-sass";
 
-#primary {
-  margin: 1.5em;
+//Override sass/css goes here
+
+.form-row {
+  input {
+    max-width: 420px;
+  }
 }

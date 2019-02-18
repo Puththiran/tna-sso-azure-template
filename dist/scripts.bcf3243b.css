@@ -4387,6 +4387,6 @@ a.hue-teal, a.hue-red {
   height: 48px;
 }
 
-#primary {
-  margin: 1.5em;
+.form-row input {
+  max-width: 420px;
 }
