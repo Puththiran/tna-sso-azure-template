@@ -1,15 +1,20 @@
 module.exports = {
-    "plugins": [
-        "eslint:recommended",
-        "plugin:vue/essential"
-    ],
-    "extends": [
-        "airbnb-base",
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "rules": {
-        "no-set-state": "off",
-        "no-console": "off"
-    }
-}
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  extends: ['prettier', 'airbnb-base', 'plugin:vue/essential'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['vue'],
+  rules: {
+    'no-console': 2,
+  },
+};

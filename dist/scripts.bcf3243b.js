@@ -110,13 +110,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getFullName = void 0;
+exports.default = void 0;
 
 var getFullName = function getFullName(fullName) {
   return fullName.split(' ')[0];
 };
 
-exports.getFullName = getFullName;
+var _default = getFullName;
+exports.default = _default;
 },{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
@@ -192,21 +193,14 @@ module.hot.accept(reloadCSS);
 },{"./../img/dot-grey.png":[["dot-grey.1c677b02.png","img/dot-grey.png"],"img/dot-grey.png"],"./../img/icon-24-heading-link.png":[["icon-24-heading-link.620b0d0c.png","img/icon-24-heading-link.png"],"img/icon-24-heading-link.png"],"./../img/heading-flourish.png":[["heading-flourish.69926d62.png","img/heading-flourish.png"],"img/heading-flourish.png"],"./../img/list-bullet.png":[["list-bullet.3d0e294a.png","img/list-bullet.png"],"img/list-bullet.png"],"./../img/list-link-bullet.png":[["list-link-bullet.dc41e479.png","img/list-link-bullet.png"],"img/list-link-bullet.png"],"./../img/footer-background.png":[["footer-background.dd2d81b7.png","img/footer-background.png"],"img/footer-background.png"],"./../img/icon-calendar.svg":[["icon-calendar.b3a73dda.svg","img/icon-calendar.svg"],"img/icon-calendar.svg"],"./../img/icon-social-facebook.png":[["icon-social-facebook.aa21c5da.png","img/icon-social-facebook.png"],"img/icon-social-facebook.png"],"./../img/icon-social-twitter.png":[["icon-social-twitter.d18e584b.png","img/icon-social-twitter.png"],"img/icon-social-twitter.png"],"./../img/icon-social-youtube-play.png":[["icon-social-youtube-play.8ed467f2.png","img/icon-social-youtube-play.png"],"img/icon-social-youtube-play.png"],"./../img/icon-social-flickr.png":[["icon-social-flickr.acd0e21f.png","img/icon-social-flickr.png"],"img/icon-social-flickr.png"],"./../img/icon-rss.png":[["icon-rss.d1df9bc7.png","img/icon-rss.png"],"img/icon-rss.png"],"./../img/icon-envelope.png":[["icon-envelope.3f817ebe.png","img/icon-envelope.png"],"img/icon-envelope.png"],"./../img/icon-audio.png":[["icon-audio.574fc8ec.png","img/icon-audio.png"],"img/icon-audio.png"],"./../img/icon-video.png":[["icon-video.9acbe775.png","img/icon-video.png"],"img/icon-video.png"],"./../img/logo-gov-uk.png":[["logo-gov-uk.ca466a92.png","img/logo-gov-uk.png"],"img/logo-gov-uk.png"],"./../img/logo-ogl.png":[["logo-ogl.3b88e30b.png","img/logo-ogl.png"],"img/logo-ogl.png"],"./../img/logo-tna-white.png":[["logo-tna-white.7e2a729a.png","img/logo-tna-white.png"],"img/logo-tna-white.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/index.js":[function(require,module,exports) {
 "use strict";
 
-var _utils = require("./utils");
+var _utils = _interopRequireDefault(require("./utils"));
 
 require("../styles/index.scss");
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var firstName = (0, _utils.getFullName)('Hello World');
+var firstName = (0, _utils.default)('Punal Chotrani');
 console.log(firstName);
-
-var Rectangle = function Rectangle(height, width) {
-  _classCallCheck(this, Rectangle);
-
-  this.height = height;
-  this.width = width;
-};
 },{"./utils":"scripts/utils.js","../styles/index.scss":"styles/index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -234,7 +228,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61383" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62014" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

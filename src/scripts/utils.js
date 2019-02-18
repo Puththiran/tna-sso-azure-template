@@ -1,5 +1,3 @@
-const getFullName = (fullName) => {
-    return fullName.split(' ')[0]
-}
+const getFullName = fullName => fullName.split(' ')[0];
 
-export { getFullName }
+export default getFullName;

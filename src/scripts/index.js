@@ -1,13 +1,6 @@
-import { getFullName } from './utils';
+import getFullName from './utils';
 import '../styles/index.scss';
 
-const firstName = getFullName('Hello World');
+const firstName = getFullName('Punal Chotrani');
 
 console.log(firstName);
-
-class Rectangle {
-    constructor(height, width) {
-        this.height = height;
-        this.width = width;
-    }
-}
