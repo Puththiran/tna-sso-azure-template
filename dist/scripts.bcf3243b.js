@@ -199,7 +199,8 @@ require("../styles/index.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var firstName = (0, _utils.default)('Punal Chotrani');
+var firstName = (0, _utils.default)('Punal Chotrani'); // eslint-disable-next-line no-console
+
 console.log(firstName);
 },{"./utils":"scripts/utils.js","../styles/index.scss":"styles/index.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -228,7 +229,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60830" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51834" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
